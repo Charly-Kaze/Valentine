@@ -9,7 +9,7 @@ if 'answered' not in st.session_state:
 if not st.session_state.answered:
     st.title("Will you be my Valentine? ❤️")
     
-    st.image("images/photo_de_Charly.jpeg", width=200)
+    st.image("photo_de_Charly.jpeg", width=200)
 
     # On crée une zone fixe pour les boutons
     col1, col2 = st.columns([1, 1])
@@ -80,10 +80,11 @@ else:
     st.title("YAY ! J'en étais sûr ! ❤️🎈")
     
     try:
-        st.image("images/photo_de_Charly.jpeg", width=500)
+        st.image("photo_de_Charly.jpeg", width=500)
     except:
-        st.error("L'image 'images/photo_de_Charly.jpeg' est introuvable dans le dossier.")
+        st.error("L'image 'photo_de_Charly.jpeg' est introuvable dans le dossier.")
     
     if st.button("Recommencer"):
         st.session_state.answered = False
+
         st.rerun()
