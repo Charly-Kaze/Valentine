@@ -77,7 +77,7 @@ else:
     st.balloons()
     st.snow()
     st.balloons() # Double dose de ballons !
-    st.title("YAY ! J'en étais sûr ! ❤️🎈")
+    st.title("YAY ! J'en étais sûre ! ❤️🎈")
     
     try:
         st.image("photo_de_Charly.jpeg", width=500)
@@ -88,3 +88,4 @@ else:
         st.session_state.answered = False
 
         st.rerun()
+
